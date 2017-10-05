@@ -1,0 +1,39 @@
+<SCRIPT LANGUAGE = "Javascript">
+var today= new Date()
+var oddnumbers  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 112, 113];     
+function remove_odd_numbers1(arr){
+    for (var i = 0; i < arr.length; i++) {
+	alert("arr[i]" +arr[i]);
+        // here
+
+        while (arr[i] % 2) {
+            arr.splice(i, 1);
+        }
+    }
+    return arr;
+}
+
+function noOdds(values){
+  return values.filter(function (num) {
+    alert(" num % 2" + num % 2);
+    return num % 2 === 0;
+  });
+}
+var even = remove_odd_numbers1(oddnumbers);
+
+alert("even " + even);
+
+
+var evenFilterOdd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 112, 113];  
+
+var evenFilter = noOdds(evenFilterOdd);
+
+alert("evenFilter" + evenFilter);
+
+
+
+</SCRIPT>
+....
+<BODY
+
+>
